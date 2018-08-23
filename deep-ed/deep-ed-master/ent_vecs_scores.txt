@@ -1,0 +1,349 @@
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.499[39m[0m	[0m[34m0.495[39m[0m	[0m[34m0.534[39m[0m	[0m[34m0.475[39m[0m	[0m[34m2.003[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.467[39m[0m	[0m[31m0.476[39m[0m	[0m[31m0.510[39m[0m	[0m[31m0.442[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_3.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.562[39m[0m	[0m[34m0.547[39m[0m	[0m[34m0.583[39m[0m	[0m[34m0.522[39m[0m	[0m[34m2.214[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.532[39m[0m	[0m[31m0.524[39m[0m	[0m[31m0.554[39m[0m	[0m[31m0.486[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_6.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.583[39m[0m	[0m[34m0.569[39m[0m	[0m[34m0.601[39m[0m	[0m[34m0.541[39m[0m	[0m[34m2.294[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.554[39m[0m	[0m[31m0.541[39m[0m	[0m[31m0.570[39m[0m	[0m[31m0.502[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_9.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.612[39m[0m	[0m[34m0.580[39m[0m	[0m[34m0.615[39m[0m	[0m[34m0.555[39m[0m	[0m[34m2.363[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.575[39m[0m	[0m[31m0.556[39m[0m	[0m[31m0.584[39m[0m	[0m[31m0.517[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_12.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.624[39m[0m	[0m[34m0.587[39m[0m	[0m[34m0.620[39m[0m	[0m[34m0.562[39m[0m	[0m[34m2.393[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.588[39m[0m	[0m[31m0.562[39m[0m	[0m[31m0.589[39m[0m	[0m[31m0.522[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_15.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.638[39m[0m	[0m[34m0.596[39m[0m	[0m[34m0.628[39m[0m	[0m[34m0.572[39m[0m	[0m[34m2.434[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.595[39m[0m	[0m[31m0.571[39m[0m	[0m[31m0.598[39m[0m	[0m[31m0.530[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_18.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.633[39m[0m	[0m[34m0.598[39m[0m	[0m[34m0.630[39m[0m	[0m[34m0.574[39m[0m	[0m[34m2.434[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.598[39m[0m	[0m[31m0.572[39m[0m	[0m[31m0.600[39m[0m	[0m[31m0.533[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_21.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.629[39m[0m	[0m[34m0.601[39m[0m	[0m[34m0.632[39m[0m	[0m[34m0.575[39m[0m	[0m[34m2.437[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.603[39m[0m	[0m[31m0.576[39m[0m	[0m[31m0.600[39m[0m	[0m[31m0.535[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_24.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.641[39m[0m	[0m[34m0.604[39m[0m	[0m[34m0.635[39m[0m	[0m[34m0.579[39m[0m	[0m[34m2.458[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.611[39m[0m	[0m[31m0.575[39m[0m	[0m[31m0.602[39m[0m	[0m[31m0.538[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_27.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.636[39m[0m	[0m[34m0.606[39m[0m	[0m[34m0.638[39m[0m	[0m[34m0.580[39m[0m	[0m[34m2.461[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.619[39m[0m	[0m[31m0.578[39m[0m	[0m[31m0.605[39m[0m	[0m[31m0.542[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_30.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.649[39m[0m	[0m[34m0.607[39m[0m	[0m[34m0.639[39m[0m	[0m[34m0.583[39m[0m	[0m[34m2.478[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.616[39m[0m	[0m[31m0.580[39m[0m	[0m[31m0.606[39m[0m	[0m[31m0.542[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_33.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.638[39m[0m	[0m[34m0.607[39m[0m	[0m[34m0.639[39m[0m	[0m[34m0.582[39m[0m	[0m[34m2.467[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.613[39m[0m	[0m[31m0.580[39m[0m	[0m[31m0.606[39m[0m	[0m[31m0.542[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_36.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.645[39m[0m	[0m[34m0.610[39m[0m	[0m[34m0.641[39m[0m	[0m[34m0.584[39m[0m	[0m[34m2.479[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.610[39m[0m	[0m[31m0.580[39m[0m	[0m[31m0.606[39m[0m	[0m[31m0.542[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_39.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.652[39m[0m	[0m[34m0.610[39m[0m	[0m[34m0.641[39m[0m	[0m[34m0.585[39m[0m	[0m[34m2.487[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.617[39m[0m	[0m[31m0.581[39m[0m	[0m[31m0.607[39m[0m	[0m[31m0.544[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_42.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.643[39m[0m	[0m[34m0.611[39m[0m	[0m[34m0.642[39m[0m	[0m[34m0.585[39m[0m	[0m[34m2.482[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.621[39m[0m	[0m[31m0.583[39m[0m	[0m[31m0.610[39m[0m	[0m[31m0.546[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_45.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.646[39m[0m	[0m[34m0.611[39m[0m	[0m[34m0.642[39m[0m	[0m[34m0.586[39m[0m	[0m[34m2.485[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.624[39m[0m	[0m[31m0.586[39m[0m	[0m[31m0.612[39m[0m	[0m[31m0.548[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_48.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.648[39m[0m	[0m[34m0.611[39m[0m	[0m[34m0.642[39m[0m	[0m[34m0.586[39m[0m	[0m[34m2.487[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.623[39m[0m	[0m[31m0.585[39m[0m	[0m[31m0.612[39m[0m	[0m[31m0.548[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_51.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.649[39m[0m	[0m[34m0.613[39m[0m	[0m[34m0.644[39m[0m	[0m[34m0.588[39m[0m	[0m[34m2.493[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.619[39m[0m	[0m[31m0.588[39m[0m	[0m[31m0.614[39m[0m	[0m[31m0.548[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_54.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.647[39m[0m	[0m[34m0.612[39m[0m	[0m[34m0.644[39m[0m	[0m[34m0.587[39m[0m	[0m[34m2.490[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.622[39m[0m	[0m[31m0.588[39m[0m	[0m[31m0.613[39m[0m	[0m[31m0.548[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_57.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.646[39m[0m	[0m[34m0.613[39m[0m	[0m[34m0.644[39m[0m	[0m[34m0.588[39m[0m	[0m[34m2.491[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.626[39m[0m	[0m[31m0.587[39m[0m	[0m[31m0.613[39m[0m	[0m[31m0.548[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_60.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.642[39m[0m	[0m[34m0.614[39m[0m	[0m[34m0.645[39m[0m	[0m[34m0.587[39m[0m	[0m[34m2.488[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.622[39m[0m	[0m[31m0.585[39m[0m	[0m[31m0.613[39m[0m	[0m[31m0.547[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_63.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.672[39m[0m	[0m[34m0.631[39m[0m	[0m[34m0.663[39m[0m	[0m[34m0.609[39m[0m	[0m[34m2.575[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.641[39m[0m	[0m[31m0.607[39m[0m	[0m[31m0.636[39m[0m	[0m[31m0.570[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_66.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.677[39m[0m	[0m[34m0.632[39m[0m	[0m[34m0.665[39m[0m	[0m[34m0.610[39m[0m	[0m[34m2.585[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.644[39m[0m	[0m[31m0.609[39m[0m	[0m[31m0.637[39m[0m	[0m[31m0.573[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_69.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.675[39m[0m	[0m[34m0.634[39m[0m	[0m[34m0.667[39m[0m	[0m[34m0.613[39m[0m	[0m[34m2.589[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.634[39m[0m	[0m[31m0.610[39m[0m	[0m[31m0.640[39m[0m	[0m[31m0.576[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_72.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.675[39m[0m	[0m[34m0.635[39m[0m	[0m[34m0.666[39m[0m	[0m[34m0.612[39m[0m	[0m[34m2.588[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.637[39m[0m	[0m[31m0.608[39m[0m	[0m[31m0.640[39m[0m	[0m[31m0.576[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_75.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.672[39m[0m	[0m[34m0.638[39m[0m	[0m[34m0.668[39m[0m	[0m[34m0.613[39m[0m	[0m[34m2.591[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.638[39m[0m	[0m[31m0.609[39m[0m	[0m[31m0.640[39m[0m	[0m[31m0.577[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_78.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.669[39m[0m	[0m[34m0.636[39m[0m	[0m[34m0.669[39m[0m	[0m[34m0.615[39m[0m	[0m[34m2.590[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.637[39m[0m	[0m[31m0.610[39m[0m	[0m[31m0.642[39m[0m	[0m[31m0.580[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_81.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.672[39m[0m	[0m[34m0.637[39m[0m	[0m[34m0.671[39m[0m	[0m[34m0.616[39m[0m	[0m[34m2.596[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.633[39m[0m	[0m[31m0.609[39m[0m	[0m[31m0.644[39m[0m	[0m[31m0.577[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_84.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.663[39m[0m	[0m[34m0.634[39m[0m	[0m[34m0.667[39m[0m	[0m[34m0.611[39m[0m	[0m[34m2.575[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.618[39m[0m	[0m[31m0.606[39m[0m	[0m[31m0.638[39m[0m	[0m[31m0.569[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_87.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.667[39m[0m	[0m[34m0.639[39m[0m	[0m[34m0.672[39m[0m	[0m[34m0.615[39m[0m	[0m[34m2.594[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.625[39m[0m	[0m[31m0.612[39m[0m	[0m[31m0.644[39m[0m	[0m[31m0.577[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_90.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.666[39m[0m	[0m[34m0.639[39m[0m	[0m[34m0.674[39m[0m	[0m[34m0.617[39m[0m	[0m[34m2.596[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.627[39m[0m	[0m[31m0.610[39m[0m	[0m[31m0.643[39m[0m	[0m[31m0.576[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_93.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.675[39m[0m	[0m[34m0.641[39m[0m	[0m[34m0.674[39m[0m	[0m[34m0.619[39m[0m	[0m[34m2.609[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.631[39m[0m	[0m[31m0.610[39m[0m	[0m[31m0.642[39m[0m	[0m[31m0.577[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_96.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.671[39m[0m	[0m[34m0.638[39m[0m	[0m[34m0.672[39m[0m	[0m[34m0.617[39m[0m	[0m[34m2.598[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.636[39m[0m	[0m[31m0.606[39m[0m	[0m[31m0.637[39m[0m	[0m[31m0.575[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_99.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.673[39m[0m	[0m[34m0.639[39m[0m	[0m[34m0.673[39m[0m	[0m[34m0.617[39m[0m	[0m[34m2.602[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.641[39m[0m	[0m[31m0.609[39m[0m	[0m[31m0.640[39m[0m	[0m[31m0.578[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_102.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.670[39m[0m	[0m[34m0.639[39m[0m	[0m[34m0.670[39m[0m	[0m[34m0.614[39m[0m	[0m[34m2.594[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.640[39m[0m	[0m[31m0.606[39m[0m	[0m[31m0.635[39m[0m	[0m[31m0.573[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_105.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.689[39m[0m	[0m[34m0.643[39m[0m	[0m[34m0.672[39m[0m	[0m[34m0.620[39m[0m	[0m[34m2.625[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.652[39m[0m	[0m[31m0.611[39m[0m	[0m[31m0.639[39m[0m	[0m[31m0.577[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_108.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.675[39m[0m	[0m[34m0.641[39m[0m	[0m[34m0.671[39m[0m	[0m[34m0.617[39m[0m	[0m[34m2.604[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.652[39m[0m	[0m[31m0.610[39m[0m	[0m[31m0.638[39m[0m	[0m[31m0.577[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_111.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.680[39m[0m	[0m[34m0.640[39m[0m	[0m[34m0.671[39m[0m	[0m[34m0.616[39m[0m	[0m[34m2.607[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.649[39m[0m	[0m[31m0.610[39m[0m	[0m[31m0.638[39m[0m	[0m[31m0.577[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_114.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.675[39m[0m	[0m[34m0.642[39m[0m	[0m[34m0.673[39m[0m	[0m[34m0.617[39m[0m	[0m[34m2.607[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.647[39m[0m	[0m[31m0.610[39m[0m	[0m[31m0.639[39m[0m	[0m[31m0.578[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_117.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.681[39m[0m	[0m[34m0.642[39m[0m	[0m[34m0.674[39m[0m	[0m[34m0.620[39m[0m	[0m[34m2.618[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.641[39m[0m	[0m[31m0.610[39m[0m	[0m[31m0.640[39m[0m	[0m[31m0.577[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_120.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.683[39m[0m	[0m[34m0.645[39m[0m	[0m[34m0.676[39m[0m	[0m[34m0.621[39m[0m	[0m[34m2.624[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.646[39m[0m	[0m[31m0.611[39m[0m	[0m[31m0.641[39m[0m	[0m[31m0.579[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_123.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.669[39m[0m	[0m[34m0.641[39m[0m	[0m[34m0.674[39m[0m	[0m[34m0.616[39m[0m	[0m[34m2.599[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.631[39m[0m	[0m[31m0.605[39m[0m	[0m[31m0.636[39m[0m	[0m[31m0.571[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_126.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.674[39m[0m	[0m[34m0.642[39m[0m	[0m[34m0.676[39m[0m	[0m[34m0.620[39m[0m	[0m[34m2.613[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.634[39m[0m	[0m[31m0.612[39m[0m	[0m[31m0.642[39m[0m	[0m[31m0.578[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_129.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.675[39m[0m	[0m[34m0.642[39m[0m	[0m[34m0.676[39m[0m	[0m[34m0.620[39m[0m	[0m[34m2.612[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.634[39m[0m	[0m[31m0.608[39m[0m	[0m[31m0.640[39m[0m	[0m[31m0.576[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_132.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.682[39m[0m	[0m[34m0.644[39m[0m	[0m[34m0.677[39m[0m	[0m[34m0.623[39m[0m	[0m[34m2.626[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.638[39m[0m	[0m[31m0.609[39m[0m	[0m[31m0.641[39m[0m	[0m[31m0.576[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_135.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.678[39m[0m	[0m[34m0.640[39m[0m	[0m[34m0.674[39m[0m	[0m[34m0.619[39m[0m	[0m[34m2.612[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.635[39m[0m	[0m[31m0.607[39m[0m	[0m[31m0.639[39m[0m	[0m[31m0.574[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_138.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.680[39m[0m	[0m[34m0.643[39m[0m	[0m[34m0.677[39m[0m	[0m[34m0.621[39m[0m	[0m[34m2.621[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.642[39m[0m	[0m[31m0.613[39m[0m	[0m[31m0.643[39m[0m	[0m[31m0.579[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_141.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.675[39m[0m	[0m[34m0.642[39m[0m	[0m[34m0.675[39m[0m	[0m[34m0.619[39m[0m	[0m[34m2.612[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.639[39m[0m	[0m[31m0.609[39m[0m	[0m[31m0.638[39m[0m	[0m[31m0.575[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_144.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.683[39m[0m	[0m[34m0.645[39m[0m	[0m[34m0.676[39m[0m	[0m[34m0.621[39m[0m	[0m[34m2.626[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.640[39m[0m	[0m[31m0.610[39m[0m	[0m[31m0.639[39m[0m	[0m[31m0.575[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_147.t7[0m	
+--
+[0m[33mmeasure    =[39m[0m	[0mNDCG1[0m	[0mNDCG5[0m	[0mNDCG10[0m	[0mMAP[0m	[0mTOTAL VALIDATION[0m	
+[0m[33mour (vald) =[39m[0m	[0m[34m0.675[39m[0m	[0m[34m0.644[39m[0m	[0m[34m0.674[39m[0m	[0m[34m0.619[39m[0m	[0m[34m2.613[39m[0m	
+[0m[33mour (test) =[39m[0m	[0m[31m0.643[39m[0m	[0m[31m0.610[39m[0m	[0m[31m0.639[39m[0m	[0m[31m0.576[39m[0m	
+[0m[33mYamada'16  =[39m[0m	[0;36m0.59[0m	[0;36m0.56[0m	[0;36m0.59[0m	[0;36m0.52[0m	
+[0m[33mWikiMW     =[39m[0m	[0;36m0.54[0m	[0;36m0.52[0m	[0;36m0.55[0m	[0;36m0.48[0m	
+[0m==> saving model to /local/home/nkolitsa/end2end_neural_el/deep-ed/data/generated/ent_vecs/ent_vecs__ep_150.t7[0m	

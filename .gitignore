@@ -1,0 +1,17 @@
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.log
+*.out
+*.run.xml
+*.toc
+*.synctex.gz
+data/
+**.idea/
+**__pycache__/
+*.swp
+*.~lock.*ods#
+end2end_neural_el_env/
+deep-ed/data/
+local/

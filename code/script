@@ -1,0 +1,32 @@
+time python -m preprocessing.prepro_util --p_e_m_choice=yago --cand_ent_num=5 \
+       --allowed_entities_set_top=1000000 --lowercase_spans=True --lowercase_p_e_m=True  >> screen_output/screen_out_4
+time python -m preprocessing.prepro_util --p_e_m_choice=yago --cand_ent_num=10 \
+       --allowed_entities_set_top=1000000 --lowercase_spans=True --lowercase_p_e_m=True  >> screen_output/screen_out_4
+time python -m preprocessing.prepro_util --p_e_m_choice=yago --cand_ent_num=15 \
+       --allowed_entities_set_top=1000000 --lowercase_spans=True --lowercase_p_e_m=True  >> screen_output/screen_out_4
+time python -m preprocessing.prepro_util --p_e_m_choice=yago --cand_ent_num=30 \
+       --allowed_entities_set_top=1000000 --lowercase_spans=True --lowercase_p_e_m=True  >> screen_output/screen_out_4
+time python -m preprocessing.prepro_util --p_e_m_choice=yago --cand_ent_num=40 \
+       --allowed_entities_set_top=1000000 --lowercase_spans=True --lowercase_p_e_m=True  >> screen_output/screen_out_4
+
+
+time python -m preprocessing.prepro_util --p_e_m_choice=crosswiki --cand_ent_num=5 \
+       --allowed_entities_set_top=1000000 --lowercase_spans=True --lowercase_p_e_m=True  >> screen_output/screen_out_4
+time python -m preprocessing.prepro_util --p_e_m_choice=crosswiki --cand_ent_num=10 \
+       --allowed_entities_set_top=1000000 --lowercase_spans=True --lowercase_p_e_m=True  >> screen_output/screen_out_4
+time python -m preprocessing.prepro_util --p_e_m_choice=crosswiki --cand_ent_num=15 \
+       --allowed_entities_set_top=1000000 --lowercase_spans=True --lowercase_p_e_m=True  >> screen_output/screen_out_4
+time python -m preprocessing.prepro_util --p_e_m_choice=crosswiki --cand_ent_num=30 \
+       --allowed_entities_set_top=1000000 --lowercase_spans=True --lowercase_p_e_m=True  >> screen_output/screen_out_4
+
+
+time python -m preprocessing.prepro_util --p_e_m_choice=wiki --cand_ent_num=5 \
+       --allowed_entities_set_top=1000000 --lowercase_spans=True --lowercase_p_e_m=True  >> screen_output/screen_out_4
+time python -m preprocessing.prepro_util --p_e_m_choice=wiki --cand_ent_num=10 \
+       --allowed_entities_set_top=1000000 --lowercase_spans=True --lowercase_p_e_m=True  >> screen_output/screen_out_4
+time python -m preprocessing.prepro_util --p_e_m_choice=wiki --cand_ent_num=15 \
+       --allowed_entities_set_top=1000000 --lowercase_spans=True --lowercase_p_e_m=True  >> screen_output/screen_out_4
+time python -m preprocessing.prepro_util --p_e_m_choice=wiki --cand_ent_num=30 \
+       --allowed_entities_set_top=1000000 --lowercase_spans=True --lowercase_p_e_m=True  >> screen_output/screen_out_4
+
+
