@@ -1,4 +1,4 @@
-# End-to-End Neural Entity Linking
+# End-to-End Neural Entity Linking (CoNLL 2018, full paper)
 ### Python source code
 
 
