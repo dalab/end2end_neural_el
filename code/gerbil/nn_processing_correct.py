@@ -1,5 +1,5 @@
 
-from model.ed_model import EDModel
+from model.model_ablations import Model
 from time import sleep
 import tensorflow as tf
 import pickle
@@ -69,7 +69,7 @@ class NNProcessing(object):
 
         # restore model
         print("loading Model:", train_args.output_folder)
-        model = EDModel(train_args, next_element)
+        model = Model(train_args, next_element)
         model.build()
         checkpoint_path = model.restore_session("el" if args.el_mode else "ed")
         self.model = model

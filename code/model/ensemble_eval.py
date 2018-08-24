@@ -3,7 +3,7 @@ import pickle
 import model.config as config
 import os
 import tensorflow as tf
-from model.ed_model import EDModel
+from model.model_ablations import Model
 import model.train as train
 from evaluation.metrics import Evaluator, metrics_calculation_and_prediction_printing, threshold_calculation
 import model.reader as reader
@@ -123,7 +123,7 @@ def create_input_pipeline(el_mode, model_folder, filenames):
     print("loading Model:", model_folder)
     #train_args.evaluation_script = True
     train_args.entity_extension = args.entity_extension
-    model = EDModel(train_args, next_element)
+    model = Model(train_args, next_element)
     model.build()
     #print("model train_args:", model.args)
     #print("model checkpoint_folder:", model.args.checkpoints_folder)

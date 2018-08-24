@@ -3,7 +3,7 @@ import pickle
 import model.config as config
 import os
 import tensorflow as tf
-from model.ed_model import EDModel
+from model.model_ablations import Model
 from evaluation.metrics import Evaluator, metrics_calculation_and_prediction_printing
 import model.train as train
 from model.util import load_train_args
@@ -90,7 +90,7 @@ def evaluate():
         input_handle_ph, sample_dataset.output_types, sample_dataset.output_shapes)
     next_element = iterator.get_next()
 
-    model = EDModel(train_args, next_element)
+    model = Model(train_args, next_element)
     model.build()
     model.input_handle_ph = input_handle_ph    # just for convenience so i can access it from everywhere
     print(tf.global_variables())

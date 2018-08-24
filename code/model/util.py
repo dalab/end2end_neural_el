@@ -183,7 +183,7 @@ def load_ent_vecs(args):
     entity_embeddings_nparray = np.load(config.base_folder + "data/entities/ent_vecs/ent_vecs.npy")
     entity_embeddings_nparray[0] = 0
     if hasattr(args, 'entity_extension') and args.entity_extension is not None:
-        entity_extension = np.load(config.base_folder +"data/"+args.entity_extension+
+        entity_extension = np.load(config.base_folder +"data/entities/"+args.entity_extension+
                                            "/ent_vecs/ent_vecs.npy")
         entity_embeddings_nparray = np.vstack((entity_embeddings_nparray, entity_extension))
     return entity_embeddings_nparray

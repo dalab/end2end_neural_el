@@ -45,7 +45,7 @@ def load_wikiid2nnid(extension_name=None):
 
 
 def load_entity_extension(wikiid2nnid, extension_name):
-    filepath = config.base_folder + "data/" + extension_name + "/wikiid2nnid/additional_wikiids.txt"
+    filepath = config.base_folder + "data/entities/" + extension_name + "/wikiid2nnid/additional_wikiids.txt"
     max_nnid = max(wikiid2nnid.values())
     assert(len(wikiid2nnid) - 1 == max_nnid)
     with open(filepath) as fin:

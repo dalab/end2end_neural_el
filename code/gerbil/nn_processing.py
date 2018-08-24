@@ -1,10 +1,10 @@
 
-from model.ed_model import EDModel
+from model.model_ablations import Model
 from time import sleep
 import tensorflow as tf
 import pickle
 from nltk.tokenize import word_tokenize
-from preprocessing.prepro_util import SamplesGenerator
+import preprocessing.prepro_util as prepro_util
 from evaluation.metrics import _filtered_spans_and_gm_gt_list
 import numpy as np
 from preprocessing.util import load_wikiid2nnid, reverse_dict, load_wiki_name_id_map, FetchCandidateEntities, \
@@ -71,7 +71,7 @@ class NNProcessing(object):
 
         # restore model
         print("loading Model:", train_args.output_folder)
-        model = EDModel(train_args, next_element)
+        model = Model(train_args, next_element)
         model.build()
         checkpoint_path = model.restore_session("el" if args.el_mode else "ed")
         self.model = model
@@ -106,6 +106,7 @@ class NNProcessing(object):
         self.prepro_args.persons_coreference = args.persons_coreference
         self.prepro_args.persons_coreference_merge = args.persons_coreference_merge
         self.fetchFilteredCoreferencedCandEntities = FetchFilteredCoreferencedCandEntities(self.prepro_args)
+        prepro_util.args = self.prepro_args
 
         self.special_tokenized_words = {"``", '"', "''"}
         self.special_words_assertion_errors = 0
@@ -150,7 +151,7 @@ class NNProcessing(object):
                     print("start= {}".format("in" if start in startidx2wordnum else "out"))
                     print("end=   {}".format("in" if start + length in endidx2wordnum else "out"))
         else:  # simple el mode so consider all possible given_spans
-            myspans = SamplesGenerator.all_spans(chunk_words)
+            myspans = prepro_util.SamplesGenerator.all_spans(chunk_words)
         # at this point whether we do ed or el by stanfordner_plus_our_ed we must have myspans  [word_num_begin, word_num_end)
         # and self.given_spans which are the same spans but with characters [begin_char, length)
 
