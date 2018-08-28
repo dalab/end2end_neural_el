@@ -12,8 +12,17 @@ source end2end_neural_el_env/bin/activate
 pip install -r requirements.txt
 ```
 
-TODO upload the data folders, the pretrained model, and the entity vectors and provide instructions
-on where they should be placed.
+Download the 'data' folder from this link (TODO), unzip it and place it under end2end_neural_el/
+These data are enough for running the pretrained models and reproducing the results. 
+
+If you want to create new models with different preprocessing 
+(or run the preprocessing steps described below)
+you should also download the pre-trained Word2Vec vectors 
+GoogleNews-vectors-negative300.bin.gz from https://code.google.com/archive/p/word2vec/. 
+Unzip it and place the bin file in the folder end2end_neural_el/data/basic_data/wordEmbeddings/Word2Vec.
+
+If you also want to train your own entity vectors then follow the instructions from [here](https://github.com/dalab/deep-ed).
+The 'basic_data' folder this time will be placed under end2end_neural_el/deep-ed/data/
 
 2: Preprocessing stage 1:
 Transform the AIDA, ACE2004, AQUAINT, MSNBC, CLUEWEB datasets to a common easy to use format.
@@ -26,13 +35,19 @@ python -m preprocessing.prepro_other_datasets
 
 3: An essential part of our system are the entity vectors (the equivalent of word-embeddings for entities). 
 You can create your entity vectors by following the instructions of the next chapter, otherwise you can use
-the provided pretrained ones. We have pretrained 322245 (from all spans of AIDA-Training, AIDA-TestA, 
-AIDA-TestB, ACE2004, AQUAINT, MSNBC) + 44010 (from all spans of DBpediaSpotlight, Derczynski, 
+the provided pretrained ones. We have pretrained  502661 entity vectors. Specifically, 
+we have trained entity vectors for all the candidate entities from all possible spans of 
+AIDA-TestA, AIDA-TestB, AIDA-Training <sup>1</sup>, ACE2004, AQUAINT, MSNBC, Clueweb, DBpediaSpotlight, Derczynski, 
 ERD2014, GERDAQ-Dev, GERDAQ-Test, GERDAQ-TrainingA, GERDAQ-TrainingB, KORE50, 
 Microposts2016-Dev, Microposts2016-Test, Microposts2016-Train, N3-RSS-500, N3-Reuters-128,
-OKE 2015 Task1, OKE 2016 Task1). Specifically, this is done by considering all possible spans
+OKE 2015 Task1, OKE 2016 Task1, and the entity relatedness dataset of (Ceccarelli et al., 2013). In more detail, 
+this is done by considering all possible spans
 of the document as a candidate span and querying our p(e|m) dictionary for all the candidate entities
 for this span (we keep only the top 30 for each candidate span). 
+
+<sup>1</sup> For AIDA-Training 10% of the candidate entities that are detected from the above
+ method are missing from the current set of pretrained entities. So in case you want to evaluate
+ the algorithm on AIDA-Training for EL this extra entities are needed.
 
 Preprocessing stage 2: converting the datasets to tfrecords (we encode the words and characters
 to numbers, we find the candidate spans and for each one the candidate entities (using the p(e|m) dictionary) and
@@ -59,31 +74,7 @@ bsub -n 2 -W 24:00 -R "rusage[mem=10000,ngpus_excl_p=1]" python3 -m model.train 
                     --attention_R=10 --attention_K=100 \
                     --train_datasets=aida_train \
                     --el_datasets=aida_dev_z_aida_test_z_aida_train --el_val_datasets=0 \
-                    --global_thr=0.0 --global_score_ffnn=0_0           
-done
-```
-
-Base Model + att + global (top2) for EL. It is exactly the same with the previous one except it has one more condition in 
-the global component. Specifically, at most two candidate entities from each candidate span
-participate in the global voting even if more have local score above the threshold \gamma'.
-```
-for v in 1 2 3
-do
-bsub -n 2 -W 24:00 -R "rusage[mem=10000,ngpus_excl_p=1]" python3 -m model.train  \
-                    --batch_size=4   --experiment_name=corefmerge \
-                    --training_name=group_global/global_model_top2$v \
-                    --ent_vecs_regularization=l2dropout  --evaluation_minutes=10 --nepoch_no_imprv=6 \
-                    --span_emb="boundaries"  \
-                    --dim_char=50 --hidden_size_char=50 --hidden_size_lstm=150 \
-                    --nn_components=pem_lstm_attention_global \
-                    --fast_evaluation=True --all_spans_training=True \
-                    --attention_ent_vecs_no_regularization=True --final_score_ffnn=0_0 \
-                    --attention_R=10 --attention_K=100 \
-                    --global_topk=2 --global_topkthr=0.001 --global_norm_or_mean=norm   \
-                    --global_gmask_based_on_localscore=True --global_score_ffnn=0_0\
-                    --train_datasets=aida_train \
-                    --el_datasets=aida_dev_z_aida_test_z_aida_train \
-                    --el_val_datasets=0     --improvement_threshold=0.1  --ablations=True
+                    --global_thr=0.001 --global_score_ffnn=0_0           
 done
 ```
 
@@ -106,7 +97,7 @@ done
 ```
 
 
-Base Model + att + global (top-2) for ED  (the only difference from the corresponding command
+Base Model + att + global for ED  (the only difference from the corresponding command
 for the EL model is the absence of the argument --all_spans_training=True which means that we train
 exactly the same architecture but now only with the gold mentions).
 ```
@@ -114,25 +105,76 @@ for v in 1 2 3
 do
 bsub -n 2 -W 24:00 -R "rusage[mem=10000,ngpus_excl_p=1]" python3 -m model.train  \
                     --batch_size=4   --experiment_name=corefmerge \
-                    --training_name=group_20_8/global_top2norm_localscoregmaskscalingv$v \
+                    --training_name=group_global/global_model_v$v \
                     --ent_vecs_regularization=l2dropout  --evaluation_minutes=10 --nepoch_no_imprv=6 \
                     --span_emb="boundaries"  \
                     --dim_char=50 --hidden_size_char=50 --hidden_size_lstm=150 \
                     --nn_components=pem_lstm_attention_global \
-                    --fast_evaluation=True \
+                    --fast_evaluation=True  \
                     --attention_ent_vecs_no_regularization=True --final_score_ffnn=0_0 \
                     --attention_R=10 --attention_K=100 \
-                    --global_topk=2 --global_topkthr=0.001 --global_norm_or_mean=norm   \
-                    --global_gmask_based_on_localscore=True --global_score_ffnn=0_0\
                     --train_datasets=aida_train \
-                    --ed_datasets=aida_dev_z_aida_test_z_aida_train \
-                    --ed_val_datasets=0     --improvement_threshold=0.1   --new_all_voters_emb=True      --ablations=True
+                    --ed_datasets=aida_dev_z_aida_test_z_aida_train --ed_val_datasets=0 \
+                    --global_thr=0.001 --global_score_ffnn=0_0           
 done
 ```
 
-### Gerbil evaluation
-TODO write instructions
+When running multiple experiments with multiple different hyperparameters we want an easy way to evaluate
+the different models. The following command goes through the log files of all the models and sorts them
+based on the performance on a selected dataset (here the AIDA-TestA).
+```
+cd evaluation; python summarize_all_experiments.py --macro_or_micro=micro --dev_set=aida_dev --test_set=aida_test
+```
 
+### Gerbil evaluation
+On one terminal run [Gerbil](https://github.com/dice-group/gerbil). Execute:
+```
+cd gerbil/                         
+./start.sh
+```
+Caution: Gerbil might be incompatible with some java versions. With Java 8 it works.
+
+On another terminal execute:
+```
+cd end2end_neural_el/gerbil-SpotWrapNifWS4Test/
+mvn clean -Dmaven.tomcat.port=1235 tomcat:run
+```
+
+On a third terminal execute:
+```
+cd end2end_neural_el/code 
+For EL:
+python -m gerbil.server --training_name=base_att_global --experiment_name=paper_models
+           --persons_coreference_merge=True --all_spans_training=True --entity_extension=extension_entities
+
+For ED:
+python -m gerbil.server --training_name=base_att_global --experiment_name=paper_models    
+           --persons_coreference_merge=True --ed_mode --entity_extension=extension_entities
+```
+By changing the training_name parameter you can try the different models 
+(base_att_global, base_att, basemodel) and reproduce the results shown in the paper (tables 2, 7, and 8).
+
+Open the url http://localhost:1234/gerbil
+- Configure experiment
+- In URI field write: http://localhost:1235/gerbil-spotWrapNifWS4Test/myalgorithm
+- Name: whatever you wish
+- Press add annotator button
+- Select the datasets that you want to evaluate the model on
+- Run experiment
+
+
+
+For **local evaluation and for printing the annotated datasets** run the following command:
+(reproduces the results of the table 9 of the paper)
+```
+For EL:
+python -m model.evaluate --training_name=base_att_global  --experiment_name=paper_models --entity_extension=extension_entities  --el_datasets=aida_dev_z_aida_test_z_aida_train_z_ace2004_z_aquaint_z_clueweb_z_msnbc_z_wikipedia    --el_val_datasets=0  --ed_datasets=""  --ed_val_datasets=0   --all_spans_training=True
+For ED:
+python -m model.evaluate --training_name=base_att_global  --experiment_name=paper_models --entity_extension=extension_entities  --ed_datasets=aida_dev_z_aida_test_z_aida_train_z_ace2004_z_aquaint_z_clueweb_z_msnbc_z_wikipedia    --ed_val_datasets=0  --el_datasets=""  --el_val_datasets=0
+```
+The local evaluation for EL is almost identical to gerbil scores but for ED it is higher. This should
+probably be attributed to some parsing errors and different preprocessing when input is from gerbil in
+comparison to local evaluation that is done on the official tokenized datasets.
 
 # Creating Entity Vectors
 As it is already mentioned, we have created entity vectors for 366255 entities from many

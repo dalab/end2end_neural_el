@@ -52,7 +52,10 @@ def load_entity_extension(wikiid2nnid, extension_name):
         line_cnt = 1
         for line in fin:
             ent_id = line.strip()
-            wikiid2nnid[ent_id] = max_nnid + line_cnt
+            if ent_id in wikiid2nnid:   # if extension entities has overlap with the normal entities set
+                wikiid2nnid[ent_id + "dupl"] = max_nnid + line_cnt    # this vector is duplicate and is never going to be used
+            else:
+                wikiid2nnid[ent_id] = max_nnid + line_cnt
             line_cnt += 1
     print("original entities: ", max_nnid + 1, " extension entities: ", len(wikiid2nnid) - (max_nnid+1))
 

@@ -86,7 +86,7 @@ def evaluate():
 
     input_handle_ph = tf.placeholder(tf.string, shape=[], name="input_handle_ph")
     sample_dataset = ed_datasets[0] if ed_datasets != [] else el_datasets[0]
-    iterator = tf.contrib.data.Iterator.from_string_handle(
+    iterator = tf.data.Iterator.from_string_handle(
         input_handle_ph, sample_dataset.output_types, sample_dataset.output_shapes)
     next_element = iterator.get_next()
 

@@ -76,8 +76,8 @@ def count_records_of_one_epoch(trainfiles):
 
 
 def train_input_pipeline(filenames, args):
+    dataset = tf.data.TFRecordDataset(filenames)
     #dataset = tf.contrib.data.TFRecordDataset(filenames)
-    dataset = tf.contrib.data.TFRecordDataset(filenames)
     dataset = dataset.map(parse_sequence_example)
     #dataset = dataset.map(parse_sequence_example, num_parallel_calls=3)
     dataset = dataset.repeat()
@@ -87,7 +87,7 @@ def train_input_pipeline(filenames, args):
 
 
 def test_input_pipeline(filenames, args):
-    dataset = tf.contrib.data.TFRecordDataset(filenames)
+    dataset = tf.data.TFRecordDataset(filenames)
     dataset = dataset.map(parse_sequence_example)
     dataset = dataset.padded_batch(args.batch_size, dataset.output_shapes)
     return dataset
