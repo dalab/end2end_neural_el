@@ -2,7 +2,7 @@
 ### Python source code
 
 
-1: Setting up the environment:
+1: Setting up the environment.
 ```
 git clone arxiv_url
 cd end2end_neural_el
@@ -12,19 +12,22 @@ source end2end_neural_el_env/bin/activate
 pip install -r requirements.txt
 ```
 
-Download the 'data' folder from this link (TODO), unzip it and place it under end2end_neural_el/
+Download the 'data' folder from [this link](https://drive.google.com/file/d/1OSKvIiXHVVaWUhQ1-fpvePTBQfgMT6Ps/view?usp=sharing), unzip it and place it under end2end_neural_el/ 
 These data are enough for running the pretrained models and reproducing the results. 
+For reproducing the results you can skip all the next steps and go directly to the 
+[gerbil evaluation section](#gerbil-evaluation).
 
 If you want to create new models with different preprocessing 
 (or run the preprocessing steps described below)
 you should also download the pre-trained Word2Vec vectors 
-GoogleNews-vectors-negative300.bin.gz from https://code.google.com/archive/p/word2vec/. 
+[GoogleNews-vectors-negative300.bin.gz](https://code.google.com/archive/p/word2vec/). 
 Unzip it and place the bin file in the folder end2end_neural_el/data/basic_data/wordEmbeddings/Word2Vec.
 
 If you also want to train your own entity vectors then follow the instructions from [here](https://github.com/dalab/deep-ed).
 The 'basic_data' folder this time will be placed under end2end_neural_el/deep-ed/data/
 
-2: Preprocessing stage 1:
+2: Preprocessing stage 1.
+
 Transform the AIDA, ACE2004, AQUAINT, MSNBC, CLUEWEB datasets to a common easy to use format.
 Only AIDA train is used by our system for training, and the AIDA-TESTA for hyperparameter tuning.
 ```
@@ -33,8 +36,11 @@ python -m preprocessing.prepro_aida
 python -m preprocessing.prepro_other_datasets
 ```
 
-3: An essential part of our system are the entity vectors (the equivalent of word-embeddings for entities). 
-You can create your entity vectors by following the instructions of the next chapter, otherwise you can use
+3: Preprocessing stage 2 (converting datasets to tfrecords).
+
+This step requires the entity vectors and the word-embeddings to exist.
+An essential part of our system are the entity vectors (the equivalent of word-embeddings for entities). 
+You can create your entity vectors by following the instructions of the [next chapter](#gerbil-evaluation), otherwise you can use
 the provided pretrained ones. We have pretrained  502661 entity vectors. Specifically, 
 we have trained entity vectors for all the candidate entities from all possible spans of 
 AIDA-TestA, AIDA-TestB, AIDA-Training <sup>1</sup>, ACE2004, AQUAINT, MSNBC, Clueweb, DBpediaSpotlight, Derczynski, 
@@ -49,14 +55,14 @@ for this span (we keep only the top 30 for each candidate span).
  method are missing from the current set of pretrained entities. So in case you want to evaluate
  the algorithm on AIDA-Training for EL this extra entities are needed.
 
-Preprocessing stage 2: converting the datasets to tfrecords (we encode the words and characters
-to numbers, we find the candidate spans and for each one the candidate entities (using the p(e|m) dictionary) and
-encode these to numbers as well).
+We now encode the words and characters of the datasets to numbers, we find the candidate spans and 
+for each one the candidate entities (using the p(e|m) dictionary) and
+encode these to numbers as well.
 ```
 python -m preprocessing.prepro_util
 ```
 
-4: Training the Neural Network:
+4: Training the Neural Network.
 
 Base Model + att + global for EL (according to the paper)
 ```
@@ -126,7 +132,7 @@ based on the performance on a selected dataset (here the AIDA-TestA).
 cd evaluation; python summarize_all_experiments.py --macro_or_micro=micro --dev_set=aida_dev --test_set=aida_test
 ```
 
-### Gerbil evaluation
+# Gerbil evaluation  
 On one terminal run [Gerbil](https://github.com/dice-group/gerbil). Execute:
 ```
 cd gerbil/                         
