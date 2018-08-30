@@ -136,7 +136,7 @@ def build_word_char_maps():
     np.save(output_folder+'embeddings_array.npy', embeddings_array)
     return word2id, char2id
 
-# TODO
+
 def build_word_char_maps_restore():
     output_folder = config.base_folder+"data/tfrecords/"+args.experiment_name+"/"
     with open(output_folder+"word_char_maps.pickle", 'rb') as handle:
@@ -411,8 +411,8 @@ class EncoderGenerator(object):
     entity universe."""
     def __init__(self):
         self._generator = SamplesGenerator()
-        #self._word2id, self._char2id = build_word_char_maps()  # TODO !!
-        self._word2id, self._char2id = build_word_char_maps_restore()  # alternative
+        self._word2id, self._char2id = build_word_char_maps()
+        #self._word2id, self._char2id = build_word_char_maps_restore()  # alternative
         self._wikiid2nnid = util.load_wikiid2nnid(args.entity_extension)
 
     def set_gmonly_mode(self):
