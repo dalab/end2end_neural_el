@@ -150,11 +150,11 @@ On a third terminal execute:
 ```
 cd end2end_neural_el/code 
 For EL:
-python -m gerbil.server --training_name=base_att_global --experiment_name=paper_models
+python -m gerbil.server --training_name=base_att_global --experiment_name=paper_models   \
            --persons_coreference_merge=True --all_spans_training=True --entity_extension=extension_entities
 
 For ED:
-python -m gerbil.server --training_name=base_att_global --experiment_name=paper_models    
+python -m gerbil.server --training_name=base_att_global --experiment_name=paper_models   \
            --persons_coreference_merge=True --ed_mode --entity_extension=extension_entities
 ```
 By changing the training_name parameter you can try the different models 
@@ -182,6 +182,52 @@ The local evaluation for EL is almost identical to gerbil scores but for ED it i
 probably be attributed to some parsing errors and different preprocessing when input is from gerbil in
 comparison to local evaluation that is done on the official tokenized datasets.
 
+# Trying the system on random user input text
+If you want to try the system on custom input it can be done in multiple ways but the simplest is
+following: 
+On one terminal run the command (similar to the Gerbil evaluation)
+```
+cd end2end_neural_el/code 
+For EL:
+python -m gerbil.server --training_name=base_att_global --experiment_name=paper_models   \
+           --persons_coreference_merge=True --all_spans_training=True --entity_extension=extension_entities
+
+For ED:
+python -m gerbil.server --training_name=base_att_global --experiment_name=paper_models   \ 
+           --persons_coreference_merge=True --ed_mode --entity_extension=extension_entities
+```
+This launches a server that expects to receive json objects of the following format:
+```
+{ "text": "Obama will visit Germany and have a meeting with Merkel tomorrow.", 
+"spans": [{"start":0,"length":5}, {"start":17,"length":7}, {"start":49,"length":6}]  }
+```
+For the EL task of course the "spans" field will be an **empty array** e.g.
+```
+{ "text": "Obama will visit Germany and have a meeting with Merkel tomorrow.", "spans": []  }
+```
+In another terminal you can submit your query in the following way:
+In python:
+```
+import requests, json
+myjson = { "text": "Obama will visit Germany and have a meeting with Merkel tomorrow.", "spans": [{"start":0,"length":5}, {"start":17,"length":7}, {"start":49,"length":6}]  }
+myjson = { "text": "Obama will visit Germany and have a meeting with Merkel tomorrow.", "spans": []  }
+requests.post("http://localhost:5555", json=myjson)
+```
+From the terminal directly with curl command:
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d "{ \"text\": \"Obama will visit Germany and have a meeting with Merkel tomorrow.\", \"spans\": [{\"start\":0,\"length\":5}, {\"start\":17,\"length\":7}, {\"start\":49,\"length\":6}]  }" 'http://localhost:5555'
+```
+The server's terminal prints the result on the screen e.g.
+```
+[(17, 7, 'Germany'), (0, 5, 'Barack_Obama'), (49, 6, 'Angela_Merkel')]
+```
+The third value of the tuple is the wikipedia title. So to obtain a hyperlink add the prefix 
+ 'https://en.wikipedia.org/wiki/' e.g. https://en.wikipedia.org/wiki/Barack_Obama
+
+Other ways to evaluate your corpus is to publish your documents in the supported formats i.e.
+publish them a) in the same format as the files in the data/new_datasets folder b) in the same 
+format as the AIDA dataset and then run the prepro_aida.py c) in the format of ace2004, aquaint, msnbc
+etc datasets (look folder data/basic_data/test_datasets/wned-datasets)  
 # Creating Entity Vectors
 As it is already mentioned, we have created entity vectors for 366255 entities from many
 different popular datasets. 

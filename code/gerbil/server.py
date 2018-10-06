@@ -28,6 +28,7 @@ class GetHandler(BaseHTTPRequestHandler):
 
 def read_json(post_data):
     data = json.loads(post_data.decode("utf-8"))
+    #print("received data:", data)
     text = data["text"]
     spans = [(int(j["start"]), int(j["length"])) for j in data["spans"]]
     return text, spans
