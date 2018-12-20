@@ -260,7 +260,7 @@ mvn clean -Dmaven.tomcat.port=1235 tomcat:run
 On a third terminal execute:
 ```
 cd end2end_neural_el/code 
-python -m gerbil.server --build_entity_uninverse=True
+python -m gerbil.server --build_entity_universe=True
 ```
 Open the url http://localhost:1234/gerbil
 - Configure experiment
