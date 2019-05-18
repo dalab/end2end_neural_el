@@ -156,6 +156,11 @@ python -m gerbil.server --training_name=base_att_global --experiment_name=paper_
 For ED:
 python -m gerbil.server --training_name=base_att_global --experiment_name=paper_models   \
            --persons_coreference_merge=True --ed_mode --entity_extension=extension_entities
+           
+For EL using this system for the ED part and stanford NER for the NER subtask.
+python -m gerbil.server --training_name=base_att_global --experiment_name=paper_models    \ 
+           --persons_coreference_merge=True --ed_mode --entity_extension=extension_entities \
+           --el_with_stanfordner_and_our_ed=True
 ```
 By changing the training_name parameter you can try the different models 
 (base_att_global, base_att, basemodel) and reproduce the results shown in the paper (tables 2, 7, and 8).
