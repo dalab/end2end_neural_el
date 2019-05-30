@@ -229,8 +229,8 @@ The server's terminal prints the result on the screen e.g.
 The third value of the tuple is the wikipedia title. So to obtain a hyperlink add the prefix 
  'https://en.wikipedia.org/wiki/' e.g. https://en.wikipedia.org/wiki/Barack_Obama
 
-Moreover, you can evalute the [jupyter notebook] which gives a usefull way to test on your own data. see the following
-Examples_End-to-End Neural Entity Linking.ipynb
+Moreover, you can evalute the jupyter notebook, which gives a usefull way to test on your own data. Find the following notebook in the main repo:
+*Examples _ End-to-End Neural Entity Linking.ipynb*
 
 Other ways to evaluate your corpus is to publish your documents in the supported formats i.e.
 publish them a) in the same format as the files in the data/new_datasets folder b) in the same 
