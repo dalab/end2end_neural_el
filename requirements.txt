@@ -1,5 +1,5 @@
 enum34==1.1.6
-requests==2.18.4
+requests==2.20.0
 scipy==1.0.0
 tensorflow-tensorboard==0.4.0
 numpy==1.14.0
